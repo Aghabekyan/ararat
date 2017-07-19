@@ -1,0 +1,63 @@
+body {
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+a {
+  color: #212121;
+  text-decoration: none;
+}
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.list-inline {
+  width: 100%;
+  display: inline-block;
+}
+
+.list-inline > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+header, footer {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.24);
+}
+
+img {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: #eaeaea;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a8a8a8;
+}

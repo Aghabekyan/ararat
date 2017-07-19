@@ -1,0 +1,39 @@
+[class^="col"],
+[class*=" col"] {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.col-100 {
+  width: 100%;
+}
+.col-80 {
+  width: calc(80% - 10px);
+}
+.col-75 {
+  width: calc(75% - 10px);
+}
+.col-70 {
+  width: calc(70% - 10px);
+}
+.col-60 {
+  width: calc(60% - 10px);
+}
+.col-50 {
+  width: calc(50% - 10px);
+}
+.col-40 {
+  width: calc(40% - 10px);
+}
+.col-33 {
+  width: calc(33% - 10px);
+}
+.col-30 {
+  width: calc(30% - 10px);
+}
+.col-25 {
+  width: calc(25% - 10px);
+}
+.col-20 {
+  width: calc(20% - 10px);
+}

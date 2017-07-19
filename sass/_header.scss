@@ -1,0 +1,37 @@
+header {
+  padding: 10px 10px 0;
+  background-image: linear-gradient(to bottom, #FBE9E7, #FFCCBC);
+  .menu {
+    li {
+      transition: all 0.3s;
+      border-bottom: 3px solid transparent;
+      a {
+        padding: 10px 15px;
+        color: #004964;
+      }
+      &:hover {
+        border-bottom: 3px solid rgba(230, 81, 0,0.42);
+      }
+      &.active {
+        border-bottom: 3px solid #e65100;
+      }
+      &:hover,
+      &.active {
+        a {
+          color: #226b86;
+        }
+      }
+    }
+  }
+  .weather-date {
+    display: block;
+    margin-left: auto;
+    width: 100%;
+    max-width: 90px;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 13px;
+    color: #757575;
+    line-height: 1.4;
+  }
+}

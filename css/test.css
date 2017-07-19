@@ -1,0 +1,134 @@
+@import url(reset.css);
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url("Roboto-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("Roboto-Medium.woff2") format("woff2"), url("Roboto-Medium.woff") format("woff"), url("Roboto-Medium.ttf") format("truetype"), url("Roboto-Medium.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+body {
+  font-family: Roboto;
+  font-size: 14px; }
+
+a {
+  color: #212121;
+  text-decoration: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  width: 100%; }
+
+.list-inline {
+  width: 100%;
+  display: inline-block; }
+
+.list-inline > * {
+  display: inline-block;
+  vertical-align: top; }
+
+header, footer {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.24); }
+
+header {
+  padding: 10px 10px 0;
+  background-image: linear-gradient(to bottom, #FBE9E7, #FFCCBC); }
+
+footer {
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #898a8c, #67686a); }
+
+.logo {
+  display: inline-block;
+  width: 90px;
+  height: 66px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.menu {
+  display: inline-block; }
+
+.deg {
+  font-family: Roboto;
+  display: inline-block;
+  position: relative;
+  padding-right: 15px; }
+
+.deg:before {
+  content: 'o';
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  right: 8px; }
+
+header .menu {
+  padding: 0; }
+
+footer .menu {
+  margin-top: 5px; }
+
+header .weather-date {
+  display: block;
+  margin-left: auto;
+  width: 100%;
+  max-width: 90px;
+  text-align: right;
+  padding-right: 15px;
+  font-size: 13px;
+  color: #757575;
+  line-height: 1.4; }
+
+.menu a {
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s; }
+
+header .menu li {
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent; }
+
+header .menu li:hover,
+header .menu li.active {
+  border-bottom: 3px solid #e65100; }
+
+header .menu li:hover a,
+header .menu li.active a {
+  color: #226b86; }
+
+header .menu a {
+  padding: 10px 15px;
+  color: #004964; }
+
+footer .menu a {
+  padding: 10px;
+  color: #eee; }
+
+/*# sourceMappingURL=test.css.map */

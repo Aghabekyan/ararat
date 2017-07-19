@@ -1,0 +1,36 @@
+.logo {
+  display: inline-block;
+  width: 90px;
+  height: 66px;
+  background-image: url(../images/logo.png); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.menu {
+  display: inline-block;
+}
+.deg {
+  font-family: Roboto;
+  display: inline-block;
+  position: relative;
+  padding-right: 15px;
+}
+.deg:before {
+  content: 'o';
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  right: 8px;
+}
+
+.menu a {
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s;
+}

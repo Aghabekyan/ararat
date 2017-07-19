@@ -1,0 +1,94 @@
+@mixin box-shadow($val:none) {
+	@if $val == none {
+		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+			 -o-box-shadow: none;
+				box-shadow: none;
+	}
+	
+	@if $val == shadow10 {
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+		   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+			 -o-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+				box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	}
+	@if $val == shadow20 {
+		-webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+		   -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+			 -o-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+				box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+	}
+	@if $val == shadow24 {
+		-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+		   -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+			 -o-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+				box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+	}
+	@if $val == shadow24hover {
+		-webkit-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24);
+		   -moz-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24);
+			 -o-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24);
+				box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24);
+	}
+	@if $val == shadow24active {
+		-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
+		   -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
+			 -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
+				box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
+	}
+	@if $val == shadow25 {
+		-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+		   -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+			 -o-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+				box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+	}
+	@if $val == shadow70 {
+		-webkit-box-shadow:  0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+		   -moz-box-shadow:  0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+			 -o-box-shadow:  0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+				box-shadow:  0px 0px 12px 0px rgba(0, 0, 0, 0.7);
+	}
+	@if $val == shadowSublist {
+		-webkit-box-shadow: 0px  2px 4px 0px rgba(0, 0, 0, 0.1) inset, 
+							0px -2px 4px 0px rgba(0, 0, 0, 0.1) inset;
+		   -moz-box-shadow: 0px  2px 4px 0px rgba(0, 0, 0, 0.1) inset, 
+							0px -2px 4px 0px rgba(0, 0, 0, 0.1) inset;
+			 -o-box-shadow: 0px  2px 4px 0px rgba(0, 0, 0, 0.1) inset, 
+							0px -2px 4px 0px rgba(0, 0, 0, 0.1) inset;
+				box-shadow: 0px  2px 4px 0px rgba(0, 0, 0, 0.1) inset, 
+							0px -2px 4px 0px rgba(0, 0, 0, 0.1) inset;
+	}
+	@if $val == shadow1inset {
+		-webkit-box-shadow: 0px  0px 3px 0px rgba(0, 0, 0, 0.7) inset;
+		   -moz-box-shadow: 0px  0px 3px 0px rgba(0, 0, 0, 0.7) inset;
+			 -o-box-shadow: 0px  0px 3px 0px rgba(0, 0, 0, 0.7) inset;
+				box-shadow: 0px  0px 3px 0px rgba(0, 0, 0, 0.7) inset;
+	}
+	@if $val == pagerShadow {
+		-webkit-box-shadow: 0px -1px 3px -1px rgba(0, 0, 0, 0.2),
+						   -1px  0px 3px -2px rgba(0, 0, 0, 0.2),
+							1px  0px 3px -2px rgba(0, 0, 0, 0.2);
+		   -moz-box-shadow: 0px -1px 3px -1px rgba(0, 0, 0, 0.2),
+						   -1px  0px 3px -2px rgba(0, 0, 0, 0.2),
+							1px  0px 3px -2px rgba(0, 0, 0, 0.2);
+			 -o-box-shadow: 0px -1px 3px -1px rgba(0, 0, 0, 0.2),
+						   -1px  0px 3px -2px rgba(0, 0, 0, 0.2),
+							1px  0px 3px -2px rgba(0, 0, 0, 0.2);
+				box-shadow: 0px -1px 3px -1px rgba(0, 0, 0, 0.2),
+						   -1px  0px 3px -2px rgba(0, 0, 0, 0.2),
+							1px  0px 3px -2px rgba(0, 0, 0, 0.2);
+	}
+	@if $val == cardShadow {
+		-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+		   -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+			 -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+				box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+	}
+}
+
+@mixin background-gradient($direction, $color1, $distance1, $color2, $distance2) {
+	-webkit-background-image: linear-gradient($direction, $color1 $distance1, $color2 $distance2);
+	   -moz-background-image: linear-gradient($direction, $color1 $distance1, $color2 $distance2);
+	     -o-background-image: linear-gradient($direction, $color1 $distance1, $color2 $distance2);
+	        background-image: linear-gradient($direction, $color1 $distance1, $color2 $distance2);
+}
