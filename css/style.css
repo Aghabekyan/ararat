@@ -46,6 +46,12 @@ table {
   border-spacing: 0; }
 
 @font-face {
+  font-family: 'Tahoma';
+  src: url("../fonts/FMBF_Tahoma.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/FMBF_Tahoma.eot?#iefix") format("embedded-opentype"), url("../fonts/FMBF_Tahoma.woff") format("woff"), url("../fonts/FMBF_Tahoma.ttf") format("truetype"), url("../fonts/FMBF_Tahoma.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
   font-family: 'Arm';
   src: url("../fonts/ARMHLV.eot");
   /* IE9 Compat Modes */
@@ -64,7 +70,7 @@ table {
   src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 body {
-  font-family: Arm;
+  font-family: Tahoma;
   font-size: 14px; }
 
 a {
@@ -169,7 +175,7 @@ img {
   display: inline-block; }
 
 .deg {
-  font-family: Arm;
+  font-family: Tahoma;
   display: inline-block;
   position: relative;
   padding-right: 15px; }
@@ -182,7 +188,7 @@ img {
   right: 8px; }
 
 .menu a {
-  font-family: Arm;
+  font-family: Tahoma;
   font-size: 14px;
   letter-spacing: 0.025em;
   text-transform: uppercase;
@@ -242,7 +248,7 @@ header {
         .slider-newsfeed .slider ul li.col-50:last-child {
           margin-left: 15px; }
   .slider-newsfeed .newsfeed h2 {
-    font-family: Arm;
+    font-family: Tahoma;
     font-size: 22px;
     color: #004964; }
   .slider-newsfeed .newsfeed ul {
@@ -257,11 +263,11 @@ header {
         display: inline-block;
         vertical-align: top; }
       .slider-newsfeed .newsfeed ul li img {
-        height: 40px; }
+        height: 45px; }
       .slider-newsfeed .newsfeed ul li p {
-        height: 40px;
+        /*height: 45px;
         overflow: hidden;
-        text-overflow: ellipsis; }
+        text-overflow: ellipsis;*/ }
 
 .seperator {
   display: inline-block;

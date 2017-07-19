@@ -1,4 +1,13 @@
 @font-face {
+  font-family: 'Tahoma';
+  src: url('../fonts/FMBF_Tahoma.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/FMBF_Tahoma.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/FMBF_Tahoma.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/FMBF_Tahoma.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/FMBF_Tahoma.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
   font-family: 'Arm';
   src: url('../fonts/ARMHLV.eot'); /* IE9 Compat Modes */
   src: url('../fonts/ARMHLV.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */

@@ -30,7 +30,7 @@
 	}
 	.newsfeed {
 		h2 {
-			font-family: Arm;
+			font-family: Tahoma;
 			font-size: 22px;
 			color: #004964;
 		}
@@ -49,13 +49,13 @@
 				}
 				img {
 					@extend .col-20;
-					height: 40px;
+					height: 45px;
 				}
 				p {
 					@extend .col-80;
-					height: 40px;
+					/*height: 45px;
 					overflow: hidden;
-					text-overflow: ellipsis;
+					text-overflow: ellipsis;*/
 				}
 			}
 		}
