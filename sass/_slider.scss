@@ -1,0 +1,290 @@
+.currency {
+  position: relative;
+  width: 150px;
+  height: 20px;
+  overflow: hidden;
+  ul li {
+    position: absolute;
+    display: inline-block;
+    transition: all 0.3s;
+    animation-name: appearFromBottom;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    &:first-child {
+      animation-delay: 0s;
+    }
+    &:nth-child(2) {
+      animation-delay: 4s;
+    }
+    &:nth-child(3) {
+      animation-delay: 8s;          
+    }
+    &:nth-child(4) {
+      animation-delay: 12s;
+    }
+  }
+}
+.slider {
+  padding-right: 26px;
+  ul {
+    box-sizing: border-box;
+    li {
+      @include box-shadow(shadow25);
+      /*cursor: pointer;*/
+      /*&:hover {
+        @include box-shadow(slider);
+      }*/
+    }
+  }
+  .main-img {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    li {
+      width: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      position: absolute;
+      padding: 0;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      animation-name: fadInOut;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+      &:first-child {
+        animation-delay: 0s;
+      }
+      &:nth-child(2) {
+        animation-delay: 4s;
+      }
+      &:nth-child(3) {
+        animation-delay: 8s;
+      }
+      img {
+        width: 100%;
+        height: 230px;
+      }
+      .description {
+        width: 100%;
+        padding: 20px;
+        height: 80px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255,  0.62);
+        position: relative;
+        bottom: 80px;
+        h3 {
+          font-family: Tahoma;
+          font-size: 22px;
+          text-align: center;
+          color: #004964;
+          padding: 0px 0 10px;
+          span {
+            font-size: 15px;
+            color: #212121;  
+          }
+        }
+        p {
+          font-size: 15px;
+          color: #212121;
+          line-height: 1.4;
+        }
+      }
+
+    }
+  }
+  .imgs-list {
+    margin-top: 15px;
+    img {
+      width: 100%;
+      height: 150px;
+    }
+    li {
+      animation-name: sliderActiveItem;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+      transition: all 0.3s;
+      border: 3px double transparent;
+      &:first-child {
+        animation-delay: 0s;
+      }
+      &:nth-child(2) {
+        animation-delay: 4s;
+      }
+      &:nth-child(3) {
+        animation-delay: 8s;
+      }
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+  }
+
+}
+
+@keyframes appearFromBottom {
+  0% {
+    opacity: 1;
+    visibility: 1;
+    top: 25px;
+  }
+  10% {
+    top: 0px;
+  }
+  20% {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+  40% {
+    top: -25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: none;
+  }
+  60% {
+    top: -25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: none; 
+  }
+  80% {
+    top: 25px;
+    transition: all 0.3s;
+  }
+  100% {
+    top: 025x;
+    transition: all 0.3s;
+  }
+}
+
+@-webkit-keyframes appearFromBottom {
+  0% {
+    opacity: 1;
+    visibility: 1;
+    top: 25px;
+  }
+  10% {
+    top: 0px;
+  }
+  20% {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+  40% {
+    top: -25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: none;
+  }
+  60% {
+    top: -25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: none; 
+  }
+  80% {
+    top: 25px;
+    transition: all 0.3s;
+  }
+  100% {
+    top: 025x;
+    transition: all 0.3s;
+  }
+}
+
+@keyframes fadInOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  20% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  66.66% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes fadInOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  20% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  66.66% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes sliderActiveItem {
+  0% {
+     border-color: #e65100;
+  }
+  20% {
+     border-color: #e65100;
+  }
+  33.33% {
+     border-color: transparent;
+  }
+  66.66% {
+    border-color: transparent;
+  }
+  80% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #e65100;
+  }
+}
+
+@-webkit-keyframes sliderActiveItem {
+  0% {
+     border-color: #e65100;
+  }
+  20% {
+     border-color: #e65100;
+  }
+  33.33% {
+     border-color: transparent;
+  }
+  66.66% {
+    border-color: transparent;
+  }
+  80% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #e65100;
+  }
+}

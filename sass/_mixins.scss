@@ -84,6 +84,12 @@
 			 -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
 				box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
 	}
+	@if $val == slider {
+		-webkit-box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.35);
+		   -moz-box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.35);
+			 -o-box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.35);
+				box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.35);
+	}
 }
 
 @mixin background-gradient($direction, $color1, $distance1, $color2, $distance2) {

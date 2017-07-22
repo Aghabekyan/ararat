@@ -2,20 +2,48 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>Ararat TV</title>
+		<title>Արարատ TV</title>
 		<link rel="icon" href="images/logo.png" />
 		<meta charset="utf-8">
 	</head>
 
 	<body>
 		<header>
-			<ul class="clearfix container">
+			<div class="info-container">
+				<ul class="container clearfix">
+					<li class="date left">Երևան 18.07.2017<span class="time">23:41</span></li>
+					<li class="weather left"><span class="deg">31</span></li>
+					<li class="currency left">
+						<ul>
+							<li>
+								<span class="currency-name">USD</span>
+								<span class="currency-value">478.82</span>
+							</li>
+							<li>
+								<span class="currency-name">GBP</span>
+								<span class="currency-value">622.85</span>
+							</li>
+							<li>
+								<span class="currency-name">EUR</span>
+								<span class="currency-value">557.59</span>
+							</li>
+							<li>
+								<span class="currency-name">RUB</span>
+								<span class="currency-value">8.14</span>
+							</li>
+						</ul>
+					</li>
+					<li class="search right">
+						<input type="search" placeholder="search" /><i class="icon-search"></i>
+					</li>
+					<li class="phone right">
+						<span><i class="icon-phone"></i>(010) 587222</span>
+					</li>
+				</ul>
+			</div>
+			<ul class="clearfix container logo-menu">
 				<li class="left logo"><a href="#"></a></li>
 				<li class="right main-menu">
-					<ul class="weather-date">
-						<li class="weather"><span class="deg">31</span>Երևան</li>
-						<li class="date">18.07 23:41</li>
-					</ul>
 					<ul class="list-inline menu">
 						<li class="active">
 							<a href="#">Գլխավոր</a>
@@ -23,8 +51,26 @@
 							<a href="#">Մեր մասին</a>
 						</li><li>
 							<a href="#">Ծրագիր</a>
-						</li><li>
-							<a href="#">Հաղորդումներ</a>
+						</li><li class="has-submenu">
+							<a href="#">Հաղորդումներ <i class="icon-angle-double-down"></i></a>
+							<ul class="submenu list-inline">
+								<li class="col-50">
+									<h4>Լրատվական</h4>
+									<ul class="sublist">
+										<li>Հայլուր</li>
+										<li>Օրակարգ</li>
+									</ul>
+								</li>
+								<li class="col-50">
+									<h4>Ճանաչողական</h4>
+									<ul class="sublist">
+										<li>Ճանաչենք Մեր Հայրենիքը</li>
+										<li>Հայորդիներ</li>
+										<li>Անտիպատմություն</li>
+										<li>Նաիրյան Հայրենիք</li>
+									</ul>
+								</li>
+							</ul>
 						</li><li>
 							<a href="#">Հետադարձ Կապ</a>
 						</li>
@@ -35,10 +81,30 @@
 		<div class="content">
 			<div class="container slider-newsfeed">
 				<div class="slider col-60">
-					<ul>
-						<li class="main-img col-100"><img src="images/slide1.jpg"></li>
-						<li class="col-50"><img src="images/slide2.jpg"></li>
-						<li class="col-50"><img src="images/slide3.jpg"></li>
+					<ul class="main-img">
+						<li class="">
+							<img src="images/slide1.jpg">
+							<div class="description">
+								<h3>Հայլուր <span>Ամեն օր 21:00</span></h3>
+							</div>
+						</li>
+						<li class="">
+							<img src="images/slide2.jpg">
+							<div class="description">
+								<p>Հանրապետության Նախագահը մասնակցել է ԱՊՀ պետությունների ղեկավարների խորհրդի նիստին:</p>
+							</div>
+						</li>
+						<li class="">
+							<img src="images/slide3.jpg">
+							<div class="description">
+								<p>Կայացել է ԵԱՀԿ գործող նախագահ Իվիցա Դաչիչի եւ Էդվարդ Նալբանդյանի հանդիպումը:</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="imgs-list list-inline">
+						<li class="col-33"><img src="images/slide1.jpg"></li>
+						<li class="col-33"><img src="images/slide2.jpg"></li>
+						<li class="col-33"><img src="images/slide3.jpg"></li>
 					</ul>
 				</div>
 				<div class="newsfeed col-40">
@@ -125,7 +191,7 @@
 					<h2>Հիմա եթերում</h2>
 					<div>
 						<div class=" video-live col-60">
-							<iframe src="https://www.youtube.com/embed/Xhsa_oncTQM" frameborder="0" allowfullscreen></iframe>
+							<img src="images/slide2.jpg">
 						</div>
 						<p class="col-40">Հանրապետության Նախագահը մասնակցել է Ղազախստանի Բուրաբայ քաղաքում անցկացված ԱՊՀ պետությունների ղեկավարների խորհրդի նիստին:Հանրապետության Նախագահը մասնակցել է Ղազախստանի Բուրաբայ քաղաքում անցկացված ԱՊՀ պետությունների ղեկավարների խորհրդի նիստին:</p>
 					</div>
@@ -140,26 +206,26 @@
 					<h2>Ամենադիտվածը</h2>
 					<ul class="list-inline">
 						<li class="col-25">
-							<iframe src="https://www.youtube.com/embed/Xhsa_oncTQM" frameborder="0" allowfullscreen></iframe>
+							<img src="images/slide2.jpg">
 							<h2 class="program-name">Հայլուր 19.07.2017</h2>
 						</li>
 						<li class="col-25">
-							<iframe src="https://www.youtube.com/embed/eTrkh3gIVoI" frameborder="0" allowfullscreen></iframe>
+							<img src="images/news2.jpg">
 							<h2 class="program-name">Հայլուր 18.07.2017</h2>
 						</li>
 						<li class="col-25">
-							<iframe src="https://www.youtube.com/embed/0nRJOQ0Pc3o" frameborder="0" allowfullscreen></iframe>
+							<img src="images/news3.jpg">
 							<h2 class="program-name">Նաիրյան Արկածներ մաս 1 - 1 </h2>
 						</li>
 						<li class="col-25">
-							<iframe src="https://www.youtube.com/embed/bd3wIYQ1kbs" frameborder="0" allowfullscreen></iframe>
+							<img src="images/news4.jpg">
 							<h2 class="program-name">Անտիպատմություն մաս 1 - 17</h2>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="programs">
-				<h2>Հաղորդումներ</h2>
+				<h2 class="container">Հաղորդումներ</h2>
 				<ul class="container programs-list">
 					<li class="program left-60">
 						<div class="main-img col-60">
