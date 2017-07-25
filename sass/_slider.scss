@@ -42,10 +42,10 @@
   .main-img {
     /*position: relative;*/
     width: 100%;
-    height: 320px;
-    >div {
+    height: 330px;
+    div {
       width: 100%;
-      height: 320px;
+      height: 330px;
       box-sizing: border-box;
       display: inline-block;
       position: absolute;
@@ -77,8 +77,9 @@
         height: 80px;
         box-sizing: border-box;
         background-color: rgba(255, 255, 255,  0.62);
-        position: relative;
-        bottom: 80px;
+        position: absolute;
+        top: auto;
+        bottom: 0;
         h3 {
           font-family: Tahoma;
           font-size: 22px;
@@ -101,9 +102,45 @@
   }
   .imgs-list {
     margin-top: 25px;
+    width: 100%;
     img {
       width: 100%;
       height: 120px;
+    }
+    .slick-slide {
+      width: 0.72%;
+      margin-right: 12px;
+    }
+    .slick-arrow {
+      display: inline-block;
+      position: absolute;
+      top: -210px;
+      z-index: 1000000;
+      width: 40px;
+      height: 40px;
+      color: transparent;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      &:before {
+        font-family: aricons;
+        font-size: 40px;
+        color: #e0e0e0;
+        display: inline-block;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &.slick-prev {
+        left: 0;
+        @extend .icon-angle-left;
+      }
+      &.slick-next {
+        right: 0px;
+        @extend .icon-angle-right;
+      }
     }
     li {
      /* animation-name: sliderActiveItem;

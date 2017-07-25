@@ -1,11 +1,17 @@
 header {
   padding: 0;
-  /*background-color: #b7b4c5;*/
-  background-image: url(../images/bg.jpg);
-  background-position: center 0;
+  background-image: url(../images/poly-bg.png),url(../images/bg.jpg);
+  background-position: center -30px;
   background-size: 100%;
   background-repeat: no-repeat;
   @include box-shadow(shadow24hover);
+  &.fixed {
+    position: fixed;
+    top: -45px;
+    left: 0;
+    width: 100%;
+    z-index: 99999999;
+  }
   .menu {
     padding: 20px 0 0px;
     >li {

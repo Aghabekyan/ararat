@@ -1,6 +1,7 @@
 body {
   font-family: Tahoma;
   font-size: 14px;
+  background-color: #f2efed;
 }
 
 a {
@@ -74,6 +75,40 @@ img {
       color: rgb(230, 81, 0);
       opacity: 0.95;
       @include box-shadow(shadow24hover);
+    }
+  }
+}
+#to_top_btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: #e65100;
+  background-color: #d3d3db;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99999;
+  font-size: 40px;
+  border-radius: 50%;
+  @include box-shadow(shadow24);
+  transition: all 0.3s;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0.9;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  &.active {
+    opacity: 0.6;
+    visibility: visible;
+    &:hover {
+      opacity: 1;
+      @include box-shadow(shadow24hover);
+    }
+    &:active {
+      @include box-shadow(shadow24active);
     }
   }
 }

@@ -18,17 +18,23 @@
 			 -o-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
 				box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
 	}
+	@if $val == seperator {
+		-webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.24);
+		   -moz-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.24);
+			 -o-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.24);
+				box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.24);
+	}
 	@if $val == shadow24 {
 		-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
 		   -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
 			 -o-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
 				box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
 	}
-	@if $val == seperator {
-		-webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.24);
-		   -moz-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.24);
-			 -o-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.24);
-				box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.24);
+	@if $val == shadow24top {
+		-webkit-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
+		   -moz-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
+			 -o-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
+				box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
 	}
 	@if $val == shadow24plus {
 		-webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.24);
