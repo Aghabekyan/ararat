@@ -50,7 +50,7 @@ img {
   max-width: 100%;
 }
 
-.icon-social-youtube {
+.icon-play-1 {
   position: relative;
   text-align: center;
   cursor: pointer;
@@ -58,17 +58,22 @@ img {
     position: absolute;
     display: inline-block;
     font-size: 45px;
-    color: #757575;
-    opacity: 1;
+    color: #212121;
+    opacity: 0.87;
     z-index: 5;
-    width: 100%;
     top: calc(50% - 35px);
+    left: calc(50% - 35px);
     pointer-events: all;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+    @include box-shadow(shadow24);
   }
   &:hover {
     &:before {
       color: rgb(230, 81, 0);
-      opacity: 1;
+      opacity: 0.95;
+      @include box-shadow(shadow24hover);
     }
   }
 }

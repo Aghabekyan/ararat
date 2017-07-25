@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css">
 		<title>Արարատ TV</title>
 		<link rel="icon" href="images/logo.png" />
 		<meta charset="utf-8">
@@ -81,31 +82,52 @@
 		<div class="content">
 			<div class="container slider-newsfeed">
 				<div class="slider col-60">
-					<ul class="main-img">
-						<li class="">
+					<div class="main-img slider-for">
+						<div>
 							<img src="images/slide1.jpg">
 							<div class="description">
 								<h3>Հայլուր <span>Ամեն օր 21:00</span></h3>
 							</div>
-						</li>
-						<li class="">
+						</div>
+						<div>
 							<img src="images/slide2.jpg">
 							<div class="description">
 								<p>Հանրապետության Նախագահը մասնակցել է ԱՊՀ պետությունների ղեկավարների խորհրդի նիստին:</p>
 							</div>
-						</li>
-						<li class="">
+						</div>
+						<div>
 							<img src="images/slide3.jpg">
 							<div class="description">
 								<p>Կայացել է ԵԱՀԿ գործող նախագահ Իվիցա Դաչիչի եւ Էդվարդ Նալբանդյանի հանդիպումը:</p>
 							</div>
-						</li>
-					</ul>
-					<ul class="imgs-list list-inline">
-						<li class="col-33"><img src="images/slide1.jpg"></li>
-						<li class="col-33"><img src="images/slide2.jpg"></li>
-						<li class="col-33"><img src="images/slide3.jpg"></li>
-					</ul>
+						</div>
+						<div>
+							<img src="images/slide1.jpg">
+							<div class="description">
+								<h3>Հայլուր <span>Ամեն օր 21:00</span></h3>
+							</div>
+						</div>
+						<div>
+							<img src="images/slide2.jpg">
+							<div class="description">
+								<p>Հանրապետության Նախագահը մասնակցել է ԱՊՀ պետությունների ղեկավարների խորհրդի նիստին:</p>
+							</div>
+						</div>
+						<div>
+							<img src="images/slide3.jpg">
+							<div class="description">
+								<p>Կայացել է ԵԱՀԿ գործող նախագահ Իվիցա Դաչիչի եւ Էդվարդ Նալբանդյանի հանդիպումը:</p>
+							</div>
+						</div>
+					</div>
+					<div class="imgs-list slider-nav list-inline">
+						<div><img src="images/slide1.jpg"></div>
+						<div><img src="images/slide2.jpg"></div>
+						<div><img src="images/slide3.jpg"></div>
+						<div><img src="images/slide1.jpg"></div>
+						<div><img src="images/slide2.jpg"></div>
+						<div><img src="images/slide3.jpg"></div>
+					</div>
 				</div>
 				<div class="newsfeed col-40">
 					<h2 class="heading">Լրահոս</h2>
@@ -188,7 +210,7 @@
 			<div class="watch-live">
 				<div class="container">
 					<h2 class="heading col-100">Հիմա եթերում</h2>
-					<div class=" video-live col-50 icon-social-youtube">
+					<div class=" video-live col-50 icon-play-1">
 						<img src="images/slide2.jpg">
 					</div>
 					<div class="tv-program col-50">
@@ -228,19 +250,19 @@
 			<div class="container">
 				<h2 class="heading">Ամենադիտվածը</h2>
 				<ul class="list-inline">
-					<li class="col-25 icon-social-youtube">
+					<li class="col-25 icon-play-1">
 						<img src="images/slide2.jpg">
 						<h2 class="program-name">Հայլուր 19.07.2017</h2>
 					</li>
-					<li class="col-25 icon-social-youtube">
+					<li class="col-25 icon-play-1">
 						<img src="images/news2.jpg">
 						<h2 class="program-name">Հայլուր 18.07.2017</h2>
 					</li>
-					<li class="col-25 icon-social-youtube">
+					<li class="col-25 icon-play-1">
 						<img src="images/news3.jpg">
 						<h2 class="program-name">Նաիրյան Արկածներ մաս 1 - 1 </h2>
 					</li>
-					<li class="col-25 icon-social-youtube">
+					<li class="col-25 icon-play-1">
 						<img src="images/news4.jpg">
 						<h2 class="program-name">Անտիպատմություն մաս 1 - 17</h2>
 					</li>
@@ -365,6 +387,9 @@
 			<div class="copyright">
 				<h6>Copyright 2017</h6>
 			</div>
+			<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+			<script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
 		</footer>
 	</body>
 </html>
