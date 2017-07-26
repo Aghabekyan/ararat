@@ -5,19 +5,32 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
   @include box-shadow(shadow24hover);
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 99999999;
+  transition: all 0.3s;
   &.fixed {
-    position: fixed;
     top: -45px;
-    left: 0;
-    width: 100%;
-    z-index: 99999999;
+    .logo {
+      width: 60px;
+      height: 48px;
+      margin-top: 5px;
+    }
+    .menu {
+      padding: 0;
+    }
+  }
+  ~.content {
+    margin-top: 131px;
   }
   .menu {
-    padding: 20px 0 0px;
+    padding: 10px 0 0px;
     >li {
       transition: all 0.3s;
       border-bottom: 3px solid transparent;
-      a {
+      button {
         padding: 20px 15px 20px;
         color: #004964;
       }
@@ -29,7 +42,7 @@ header {
       }
       &:hover,
       &.active {
-        a {
+        button {
           color: #226b86;
         }
       }
@@ -83,6 +96,7 @@ header {
         padding: 5px 0 5px 20px;
         color: #eee;
         font-size: 13px;
+        margin-right: 10px;
         &::-webkit-search-cancel-button {
           -webkit-appearance: none;
           -moz-appearance: none;
@@ -113,10 +127,57 @@ header {
           }
         }
       }
+      .search-by-date {
+        &:before {
+          display: inline-block;
+          margin-right: -20px;
+        }
+        input[type="date"] {
+          background-color: transparent;
+          border-width: 0 0 1px 0;
+          outline: none !important;
+          padding: 2px 0 2px 20px;
+          color: #eee;
+          font-size: 13px;
+          &::-webkit-clear-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            cursor: pointer;
+            position: absolute;
+            top: 4px;
+            right: 40px;
+            border: 5px solid transparent;
+            background-image: linear-gradient(to bottom right, transparent 41%, #ccc calc(41% + 1px), transparent calc(41% + 2px)),
+                              linear-gradient(to bottom  left, transparent 41%, #ccc calc(41% + 1px), transparent calc(41% + 2px));
+            background-repeat: no-repeat;
+          }
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+          }
+          +i {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            font-size: 15px;
+            color: #eee;
+          }
+          &:hover,
+          &:focus {
+            border-color: rgba(230, 81, 0,0.42);
+            +i {
+              color: rgba(230, 81, 0,0.42);
+            }
+          }
+        }
+      }
     }
   }
   .logo-menu {
-    padding: 10px 0 0;
+    padding: 0;
   }
 }
 

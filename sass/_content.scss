@@ -170,12 +170,7 @@
 	}
 }
 .best-watch-list {
-	padding: 30px 0 40px;
-	position: relative;
-	opacity: 1;
-	border-top: 3px double rgba(230, 81, 0,0.42);
-	background-color: #e0e0e0;
-	@include box-shadow(shadow24);
+	padding: 50px 0 100px;
 	ul {
 		text-align: center;
 		position: relative;
@@ -198,14 +193,23 @@
 	}
 }
 .programs {
-	padding: 50px 0 100px;
+	padding: 0;
+	position: relative;
+	opacity: 1;
+	border-top: 3px double rgba(230, 81, 0,0.42);
+	background-color: #e0e0e0;
+	@include box-shadow(shadow24);
+	.programs-list {
+		padding: 30px 0;
+	}
 	.heading {
-		margin-bottom: 50px;
+		margin: 50px auto 10px;
 	}
 	.program {
 		position: relative;
 		vertical-align: top;
-		&:not(:last-child) {
+		margin-bottom: 30px;
+		&:not(:nth-child(4n)) {
 			margin-right: 8px;
 		}
 		.main-img {
@@ -253,6 +257,73 @@
 				font-size: 13px;
 				color: #757575;
 				line-height: 1.4;
+			}
+		}
+	}
+	.programs-categories {
+		/*background-color: #d6c7be;
+		background-image: url(../images/poly-bg.png),
+	                  radial-gradient(rgba(230, 81, 0, 0.3), #d3d3db);*/
+	    position: relative;
+		&:after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: url(../images/bg.jpg);
+			opacity: 0.35;
+			top: 0;
+			left: 0;
+		    background-position: center;
+			background-size: 100%;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			z-index: 0;
+		}
+		.container {
+			padding: 30px 0;
+			position: relative;
+			z-index: 999999;
+			> div {
+				margin: 10px 0;
+				padding: 30px;
+				height: 400px;
+				box-sizing: border-box;
+				@include box-shadow(shadow24plus);
+				background-color: #d3d3db;
+				&:nth-child(2n+1){
+					margin-right: 10px;
+				}
+				h3 {
+					font-size: 20px;
+					color: #004964;
+					margin-bottom: 20px;
+					span {
+						display: inline-block;
+						margin-left: 10px;
+						color: #757575;
+						font-size: 15px;
+					}
+				}
+				ul {
+					li {
+						margin: 15px 0 0;
+						height: 135px;
+						@include box-shadow(shadow24);
+						transition: all 0.3s;
+						&:hover {
+							@include box-shadow(shadow24hover);
+						}
+						&:nth-child(2n+1){
+							margin-right: 15px;
+						}
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
 			}
 		}
 	}
