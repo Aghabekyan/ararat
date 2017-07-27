@@ -29,6 +29,7 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .list-inline {
@@ -62,8 +63,8 @@ img {
     color: #fff;
     opacity: 0.4;
     z-index: 5;
-    top: calc(50% - 35px);
-    left: calc(50% - 35px);
+    top: calc(50% - 25px);
+    left: calc(50% - 20px);
     pointer-events: all;
     /*border-radius: 50%;*/
     /*background-color: rgba(255, 255, 255, 0.1);*/
