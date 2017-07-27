@@ -120,10 +120,10 @@ table {
 .icon-angle-down:before {
   content: "\66"; }
 
-.icon-angle-left:before, .slider .slick-arrow.slick-prev:before {
+.icon-angle-left:before, .slider .wa-arrow.wa-prev:before {
   content: "\67"; }
 
-.icon-angle-right:before, .slider .slick-arrow.slick-next:before {
+.icon-angle-right:before, .slider .wa-arrow.wa-next:before {
   content: "\68"; }
 
 .icon-angle-up:before {
@@ -363,10 +363,10 @@ img {
   .slider .main-img {
     position: relative;
     width: 100%;
-    height: 330px; }
+    height: 430px; }
     .slider .main-img div {
       width: 100%;
-      height: 330px;
+      height: 100%;
       box-sizing: border-box;
       display: inline-block;
       position: absolute;
@@ -413,7 +413,9 @@ img {
           font-size: 15px;
           color: #212121;
           line-height: 1.4; }
-  .slider .slick-arrow {
+  .slider .wa-showing-area {
+    position: relative; }
+  .slider .wa-arrow {
     display: inline-block;
     position: absolute;
     top: calc(50% - 20px);
@@ -424,8 +426,9 @@ img {
     background-color: transparent;
     border: none;
     outline: none;
-    cursor: pointer; }
-    .slider .slick-arrow:before {
+    cursor: pointer;
+    box-shadow: none; }
+    .slider .wa-arrow:before {
       font-family: aricons;
       font-size: 40px;
       color: #e0e0e0;
@@ -434,10 +437,26 @@ img {
       position: absolute;
       top: 0;
       left: 0; }
-    .slider .slick-arrow.slick-prev {
+    .slider .wa-arrow.wa-prev {
       left: 0; }
-    .slider .slick-arrow.slick-next {
+    .slider .wa-arrow.wa-next {
       right: 0px; }
+    .slider .wa-arrow:hover {
+      color: transparent;
+      background-color: transparent; }
+  .slider .wa-dots .dot {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none; }
+    .slider .wa-dots .dot .dot-btn {
+      -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+      -o-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+      border: 1px solid #e0e0e0; }
+      .slider .wa-dots .dot .dot-btn.active, .slider .wa-dots .dot .dot-btn:hover {
+        background-color: rgba(230, 81, 0, 0.8); }
   .slider .imgs-list {
     margin-top: 25px;
     width: 100%; }

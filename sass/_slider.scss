@@ -41,10 +41,10 @@
   .main-img {
     position: relative;
     width: 100%;
-    height: 330px;
+    height: 430px;
     div {
       width: 100%;
-      height: 330px;
+      height: 100%;
       box-sizing: border-box;
       display: inline-block;
       position: absolute;
@@ -99,7 +99,10 @@
 
     }
   }
-  .slick-arrow {
+  .wa-showing-area {
+    position: relative;
+  }
+  .wa-arrow {
     display: inline-block;
     position: absolute;
     top: calc(50% - 20px);
@@ -111,6 +114,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    box-shadow: none;
     &:before {
       font-family: aricons;
       font-size: 40px;
@@ -121,14 +125,30 @@
       top: 0;
       left: 0;
     }
-    &.slick-prev {
+    &.wa-prev {
       left: 0;
       @extend .icon-angle-left;
     }
-    &.slick-next {
+    &.wa-next {
       right: 0px;
       @extend .icon-angle-right;
     }
+    &:hover {
+      color: transparent;
+      background-color: transparent;
+    }
+  }
+  .wa-dots .dot {
+    @include box-shadow(none);
+    .dot-btn {
+      @include box-shadow(shadow25);
+      border: 1px solid #e0e0e0;
+      &.active,
+      &:hover {
+        background-color: rgba(230, 81, 0, 0.8);
+      }
+    }
+
   }
   .imgs-list {
     margin-top: 25px;
