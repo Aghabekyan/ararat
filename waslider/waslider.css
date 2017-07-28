@@ -52,7 +52,6 @@
 
 .wa-slider {
   overflow: hidden;
-  text-align: center;
   box-sizing: border-box;
   padding: 15px 30px 15px 15px;
   margin: 0; }
@@ -105,7 +104,7 @@
     .wa-dots .dot .dot-btn.active, .wa-dots .dot .dot-btn:hover {
       background-color: #1f8695; }
 
-.clearfix:before {
+.clearfix:after {
   content: '.';
   display: block;
   clear: both;

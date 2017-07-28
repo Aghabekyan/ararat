@@ -1,4 +1,3 @@
-
 (function($)
 	{
 		$.fn.waSlider = function ($customSettings) {
@@ -151,10 +150,10 @@
 			};
 			var cssEase = function ($conf){
 				for (var i = 0; i < $conf.$visible.length; i++) {
-			        $conf.$visible[i].css({'opacity': 1});
+			        $conf.$visible[i].css({'opacity': 1,'transition-property':'opacity'});
 				}
 				for (var i = 0; i < $conf.$hidden.length; i++) {
-			        $conf.$hidden[i].css({'opacity': 0});
+			        $conf.$hidden[i].css({'opacity': 0,'transition-property':'opacity'});
 				}
 			};
 
@@ -245,13 +244,15 @@
 							$conf.$showingArea.append("<ul class='wa-dots clearfix'></ul>");
 							if($($conf.$showingArea[0].children[1]).hasClass('wa-dots')){
 								$conf.$waSliderDots = $($conf.$showingArea[0].children[1]);
-							}						
-							$conf.$waSliderDots.css("max-width",$conf.size*20);
+							}
+							var dotsMaxWidth = 0;
 							for (var i = 0; i < $conf.size; ++i) {
 								$conf.$waSliderDots.append("<li class='dot'><button class='dot-btn'></button</li>");
 								$conf.$dots[i] = $conf.$waSliderDots[0].children[i].children[0];
+								dotsMaxWidth += $($conf.$dots[i]).outerWidth(true);
 								$conf.$dots[i].index = $conf.$sliderList[i].index;
-							}
+							}/*
+							$conf.$waSliderDots.css("max-width",dotsMaxWidth);*/
 
 							for (var i = 0; i < $conf.size; ++i) {
 								$($conf.$dots[i]).click(function(){
@@ -472,7 +473,7 @@
 					},
 				},
 				imgPreloader: function (pictureUrls, callback, $conf) {
-				    var i,
+				    /*var i,
 				        j,
 				        loaded = 0;
 
@@ -486,7 +487,8 @@
 				            };
 				            img.src = src;
 				        } (new Image(), pictureUrls[i]));
-				    }
+				    }*/
+				    callback($conf);
 				},
 				init: function (conf) {
 					if(settings == 'waTurnOf') {

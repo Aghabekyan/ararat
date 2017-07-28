@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="waslider/waslider.css">
+		<!-- <link rel="stylesheet" type="text/css" href="waslider/waslider.css">
+		<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"> -->
+		<link rel="stylesheet" type="text/css" href="fotorama.4.6.3/fotorama/fotorama.css">
 		<title>Արարատ TV</title>
 		<link rel="icon" href="images/logo.png" />
 		<meta charset="utf-8">
@@ -17,20 +19,16 @@
 					<li class="currency left">
 						<ul>
 							<li>
-								<span class="currency-name">USD</span>
-								<span class="currency-value">478.82</span>
+								<span class="currency-name">USD 478.82</span>
 							</li>
 							<li>
-								<span class="currency-name">GBP</span>
-								<span class="currency-value">622.85</span>
+								<span class="currency-name">GBP 622.85</span>
 							</li>
 							<li>
-								<span class="currency-name">EUR</span>
-								<span class="currency-value">557.59</span>
+								<span class="currency-name">EUR 557.59</span>
 							</li>
 							<li>
-								<span class="currency-name">RUB</span>
-								<span class="currency-value">8.14</span>
+								<span class="currency-name">RUB 8.14</span>
 							</li>
 						</ul>
 					</li>
@@ -93,7 +91,15 @@
 		<div class="content">
 			<div class="container slider-newsfeed">
 				<div class="slider col-60">
-					<div class="main-img slider-for">
+					<div class="main-img fotorama"
+					     data-loop="true"
+					     data-width="100%"
+					     data-autoplay="true"
+					     data-stopautoplayontouch="false"
+					     data-arrows="true"
+					     data-click="true"
+					     data-swipe="true"
+					     data-transition="slide">
 						<div>
 							<img src="images/slide1.jpg">
 							<div class="description">
@@ -537,7 +543,9 @@
 				<h6>Copyright 2017</h6>
 			</div>
 			<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-			<script type="text/javascript" src="waslider/waslider.js"></script>
+			<!-- <script type="text/javascript" src="waslider/waslider.js"></script>
+			<script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script> -->
+			<script type="text/javascript" src="fotorama.4.6.3/fotorama/fotorama.js"></script>
 			<script type="text/javascript" src="js/main.js"></script>
 		</footer>
 	</body>

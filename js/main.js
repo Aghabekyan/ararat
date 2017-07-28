@@ -1,5 +1,5 @@
 $(function() {
-	 $('.slider-for').waSlider({
+	 /*$('.slider-for').waSlider({
 	  'autoplay': true,
 	  'speed': 5000,
 	  'slidesToScroll': 1,
@@ -9,17 +9,8 @@ $(function() {
 	  'dots': true,
 	  'swipe': true,
 	  'animation':'cssEase'
-	});
-	/*$('.slider-nav').slick({
-	  slidesToShow: 3,
-	  slidesToScroll: 1,
-	  asNavFor: '.slider-for',
-	  dots: false,
-	  arrows: false,
-	  centerMode: true,
-	  focusOnSelect: false,
-	  variableWidth: true
 	});*/
+	/*$('.fotorama').fotorama();*/
 	/*$('.currency').slick({
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
