@@ -89,6 +89,9 @@
 			background-color: #f2efed;
 			>ul>li  {
 				margin-bottom: 30px;
+				&:not(:nth-child(4n)) {
+					margin-right: 8px;
+				}
 				h3 {
 					color: #004964;
 					margin-bottom: 20px;

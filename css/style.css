@@ -1406,6 +1406,8 @@ footer {
     background-color: #f2efed; }
     .programs-categories .all-list-programs .container > ul > li {
       margin-bottom: 30px; }
+      .programs-categories .all-list-programs .container > ul > li:not(:nth-child(4n)) {
+        margin-right: 8px; }
       .programs-categories .all-list-programs .container > ul > li h3 {
         color: #004964;
         margin-bottom: 20px; }
