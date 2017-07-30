@@ -30,9 +30,12 @@ header {
     >li {
       transition: all 0.3s;
       border-bottom: 3px solid transparent;
-      button {
+      button,a {
         padding: 25px 15px 15px;
         color: #004964;
+        a {
+          color: inherit;
+        }
       }
       &:hover {
         border-bottom: 3px solid rgba(230, 81, 0,0.42);
@@ -42,7 +45,7 @@ header {
       }
       &:hover,
       &.active {
-        button {
+        button,a {
           color: #226b86;
         }
       }
@@ -71,27 +74,6 @@ header {
       .time {
         display: inline-block;
         margin-left: 10px;
-      }
-    }
-    .social-icons {
-      a {
-        width: 22px;
-        height: 22px;
-        padding: 3px;
-        margin-right: 2px;
-        margin-top: 5px;
-        background-color: #e0e0e0;
-        box-sizing: border-box;
-        display: inline-block;
-        font-size: 15px;
-        border-radius: 2px;
-        color: #9697a1;
-        line-height: 0.7;
-        text-align: center;
-        transition: all 0.3s;
-        &:hover {
-          color: #e65100;
-        }
       }
     }
     

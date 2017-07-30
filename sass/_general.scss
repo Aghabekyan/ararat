@@ -113,6 +113,27 @@ img {
   }
 }
 
+.social-icons {
+  a {
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+    margin-right: 2px;
+    margin-top: 5px;
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 2px;
+    color: #9697a1;
+    line-height: 0.7;
+    text-align: center;
+    transition: all 0.3s;
+    &:hover {
+      color: #e65100;
+    }
+  }
+}
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 8px;

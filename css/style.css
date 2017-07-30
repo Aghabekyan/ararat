@@ -289,6 +289,24 @@ img {
       -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
       box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24); }
 
+.social-icons a {
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  margin-right: 2px;
+  margin-top: 5px;
+  background-color: #e0e0e0;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 2px;
+  color: #9697a1;
+  line-height: 0.7;
+  text-align: center;
+  transition: all 0.3s; }
+  .social-icons a:hover {
+    color: #e65100; }
+
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 8px; }
@@ -852,14 +870,16 @@ header {
     header .menu > li {
       transition: all 0.3s;
       border-bottom: 3px solid transparent; }
-      header .menu > li button {
+      header .menu > li button, header .menu > li a {
         padding: 25px 15px 15px;
         color: #004964; }
+        header .menu > li button a, header .menu > li a a {
+          color: inherit; }
       header .menu > li:hover {
         border-bottom: 3px solid rgba(230, 81, 0, 0.42); }
       header .menu > li.active {
         border-bottom: 3px solid #e65100; }
-      header .menu > li:hover button, header .menu > li.active button {
+      header .menu > li:hover button, header .menu > li:hover a, header .menu > li.active button, header .menu > li.active a {
         color: #226b86; }
   header .info-container {
     width: 100%;
@@ -880,23 +900,6 @@ header {
     header .info-container .date .time {
       display: inline-block;
       margin-left: 10px; }
-    header .info-container .social-icons a {
-      width: 22px;
-      height: 22px;
-      padding: 3px;
-      margin-right: 2px;
-      margin-top: 5px;
-      background-color: #e0e0e0;
-      box-sizing: border-box;
-      display: inline-block;
-      font-size: 15px;
-      border-radius: 2px;
-      color: #9697a1;
-      line-height: 0.7;
-      text-align: center;
-      transition: all 0.3s; }
-      header .info-container .social-icons a:hover {
-        color: #e65100; }
     header .info-container .phone i {
       display: inline-block;
       vertical-align: middle;
@@ -1326,5 +1329,117 @@ footer {
     color: #a5a5a5;
     font-size: 13px;
     padding: 12px 0; }
+
+.programs-categories .content {
+  margin-top: 145px; }
+.programs-categories .last-videos {
+  margin-bottom: 20px; }
+  .programs-categories .last-videos > * h3 {
+    margin-top: 10px;
+    color: #004964; }
+    .programs-categories .last-videos > * h3 span {
+      display: inline-block;
+      width: 100%;
+      color: #757575;
+      line-height: 2.5; }
+  .programs-categories .last-videos > .col-70 {
+    text-align: left; }
+    .programs-categories .last-videos > .col-70 > div {
+      text-align: left; }
+    .programs-categories .last-videos > .col-70 img {
+      width: calc(100% - 30px);
+      height: 400px; }
+    .programs-categories .last-videos > .col-70 h3 {
+      font-size: 18px; }
+      .programs-categories .last-videos > .col-70 h3 span {
+        font-size: 15px; }
+    .programs-categories .last-videos > .col-70 .social-icons {
+      margin-top: 10px;
+      padding-right: 30px; }
+  .programs-categories .last-videos > .col-30 li {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); }
+    .programs-categories .last-videos > .col-30 li img {
+      height: 87px; }
+    .programs-categories .last-videos > .col-30 li h3 {
+      font-size: 15px;
+      padding-left: 10px; }
+      .programs-categories .last-videos > .col-30 li h3 span {
+        font-size: 13px; }
+    .programs-categories .last-videos > .col-30 li:not(:last-child) {
+      margin-bottom: 15px; }
+.programs-categories .all-list-programs {
+  -webkit-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
+  -o-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
+  padding: 30px 0 40px;
+  margin-bottom: -40px;
+  position: relative;
+  background-color: #d3d3db;
+  background-image: url(../images/poly-bg.png); }
+  .programs-categories .all-list-programs:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 0; }
+  .programs-categories .all-list-programs > * {
+    position: relative;
+    z-index: 5; }
+  .programs-categories .all-list-programs .container > ul {
+    margin: 0px 0 50px;
+    padding: 30px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.24);
+    -o-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.24);
+    background-color: #f2efed;
+    display: inline-block; }
+    .programs-categories .all-list-programs .container > ul > li {
+      margin-bottom: 30px; }
+      .programs-categories .all-list-programs .container > ul > li h3 {
+        color: #004964;
+        margin-bottom: 20px; }
+        .programs-categories .all-list-programs .container > ul > li h3 span {
+          display: inline-block;
+          margin-left: 10px;
+          color: #757575; }
+      .programs-categories .all-list-programs .container > ul > li > h3 {
+        font-size: 20px; }
+        .programs-categories .all-list-programs .container > ul > li > h3 span {
+          font-size: 15px; }
+      .programs-categories .all-list-programs .container > ul > li > ul h3 {
+        font-size: 15px;
+        margin-top: 10px; }
+        .programs-categories .all-list-programs .container > ul > li > ul h3 span {
+          font-size: 13px; }
+      .programs-categories .all-list-programs .container > ul > li > ul img {
+        width: 100%;
+        height: 200px; }
+      .programs-categories .all-list-programs .container > ul > li .show-more {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        font-size: 30px;
+        color: #004964;
+        background-color: transparent;
+        border: none;
+        padding: 5px 0;
+        text-align: center; }
+.programs-categories .seperator {
+  position: relative;
+  z-index: 9; }
 
 /*# sourceMappingURL=style.css.map */
