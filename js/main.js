@@ -34,10 +34,10 @@ $(function() {
 	$('#to_top_btn').click(function() {
 		$('body').animate({scrollTop: 0}, 300);
 	})
-	$('.has-submenu>button').click(function() {
+	$('.has-submenu>a').click(function() {
 		$(this).toggleClass('active');
 	})
-	$('.has-submenu>button').blur(function() {
+	$('.has-submenu>a').blur(function() {
 		console.log($('.submenu:hover').length);
 		if (!($('.submenu:hover').length)) {
 			$(this).removeClass('active');
