@@ -1453,14 +1453,17 @@ footer {
       font-size: 22px;
       line-height: 1.5;
       margin-bottom: 10px; }
-      .show-item .last-videos > .col-70 h3 span {
-        font-size: 15px;
-        font-weight: 600;
-        padding: 5px 5px 2px 0;
+      .show-item .last-videos > .col-70 h3 .date {
+        font-size: 18px;
         margin-right: 10px;
-        border-right: 2px solid #e65100;
-        vertical-align: bottom;
         color: #e65100; }
+        .show-item .last-videos > .col-70 h3 .date:after {
+          content: '|';
+          display: inline-block;
+          vertical-align: -2px;
+          font-size: 30px;
+          padding-left: 5px;
+          color: #e65100; }
     .show-item .last-videos > .col-70 .social-icons {
       margin-top: 10px;
       padding-right: 30px; }
