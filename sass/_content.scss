@@ -29,8 +29,9 @@
 	margin-bottom: 10px;
 	text-align: left;
 	@include box-shadow(shadow24plus);
+	background-repeat: no-repeat;
 	background-image: url(../images/poly-bg.png),
-	                  linear-gradient(to right, rgba(230, 81, 0, 0.8), transparent);
+	                  linear-gradient(to right, rgba(230, 81, 0, 0.8) 1%, transparent 65%, transparent 66%);
 }
 .slider-newsfeed {
 	padding: 30px 0 40px;	
@@ -93,7 +94,7 @@
 	@include box-shadow(shadow24top);
 	padding: 30px 0 40px;
 	position: relative;
-	background-color: #d3d3db;
+	background-color: #f5f5fd;
 	background-image: url(../images/poly-bg.png);
 	&:after {
 		content: '';
@@ -139,6 +140,8 @@
 			ul {
 				font-size: 20px;
 				line-height: 1;
+				max-height: 240px;
+				overflow: auto;
 				span {
 					display: inline-block;
 				}
@@ -151,7 +154,6 @@
 					margin-left: 10px;
 				}
 				li {
-					cursor: pointer;
 					padding: 10px;
 					&:hover {
 						background-color: rgba(230, 81, 0, 0.42);
@@ -261,7 +263,7 @@
 		}
 	}
 	.programs-categories {
-		background-color: #d3d3db;
+		background-color: #f5f5fd;
 		background-image: url(../images/poly-bg.png);
 		@include box-shadow(shadow24top);
 		/*&:after {

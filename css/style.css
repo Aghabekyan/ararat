@@ -576,6 +576,30 @@ img {
          margin-right: 12px;
        }*/ }
 
+.programs .fotorama {
+  width: 100%; }
+  .programs .fotorama .fotorama__wrap {
+    width: 100% !important;
+    height: 300px !important; }
+  .programs .fotorama .fotorama__stage {
+    height: 300px !important; }
+  .programs .fotorama .fotorama__stage__shaft {
+    display: none !important; }
+  .programs .fotorama .fotorama__nav__shaft {
+    width: 100% !important; }
+  .programs .fotorama .fotorama__nav-wrap {
+    width: 100%;
+    position: relative;
+    top: -300px;
+    height: 300px; }
+    .programs .fotorama .fotorama__nav-wrap .fotorama__nav__frame--thumb {
+      width: 24% !important;
+      margin-right: 1%;
+      height: 300px; }
+      .programs .fotorama .fotorama__nav-wrap .fotorama__nav__frame--thumb img {
+        width: 100% !important;
+        height: 100% !important; }
+
 @keyframes appearFromRight {
   0% {
     opacity: 1;
@@ -1022,7 +1046,8 @@ header {
   -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.24);
   -o-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.24);
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.24);
-  background-image: url(../images/poly-bg.png), linear-gradient(to right, rgba(230, 81, 0, 0.8), transparent); }
+  background-repeat: no-repeat;
+  background-image: url(../images/poly-bg.png), linear-gradient(to right, rgba(230, 81, 0, 0.8) 1%, transparent 65%, transparent 66%); }
 
 .slider-newsfeed {
   padding: 30px 0 40px; }
@@ -1078,7 +1103,7 @@ header {
   box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
   padding: 30px 0 40px;
   position: relative;
-  background-color: #d3d3db;
+  background-color: #f5f5fd;
   background-image: url(../images/poly-bg.png); }
   .watch-live:after {
     content: '';
@@ -1116,7 +1141,9 @@ header {
       padding: 10px; }
     .watch-live > div .tv-program ul {
       font-size: 20px;
-      line-height: 1; }
+      line-height: 1;
+      max-height: 240px;
+      overflow: auto; }
       .watch-live > div .tv-program ul span {
         display: inline-block; }
       .watch-live > div .tv-program ul .time {
@@ -1126,7 +1153,6 @@ header {
         color: #212121;
         margin-left: 10px; }
       .watch-live > div .tv-program ul li {
-        cursor: pointer;
         padding: 10px; }
         .watch-live > div .tv-program ul li:hover {
           background-color: rgba(230, 81, 0, 0.42); }
@@ -1214,7 +1240,7 @@ header {
         color: #757575;
         line-height: 1.4; }
   .programs .programs-categories {
-    background-color: #d3d3db;
+    background-color: #f5f5fd;
     background-image: url(../images/poly-bg.png);
     -webkit-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
     -moz-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.24);
