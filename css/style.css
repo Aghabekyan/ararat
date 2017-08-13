@@ -578,10 +578,12 @@ img {
 
 .programs.haylur-slider .caroufredsel_wrapper {
   width: 100% !important; }
+.programs.haylur-slider .list_carousel {
+  padding: 0 55px 0 65px;
+  position: relative; }
 .programs.haylur-slider .container {
   max-width: 1500px;
   margin-top: 30px;
-  padding: 0 25px 0 35px;
   position: relative; }
 .programs.haylur-slider .heading {
   margin-bottom: 30px; }
@@ -590,7 +592,7 @@ img {
   position: absolute;
   font-size: 27px;
   text-align: center;
-  top: 140px;
+  top: 85px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -614,11 +616,12 @@ img {
     -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24); }
 .programs.haylur-slider .prev {
-  left: -5px; }
+  left: 5px; }
 .programs.haylur-slider .next {
-  right: -15px; }
+  right: 5px; }
 .programs.haylur-slider .pager {
   width: 100%;
+  margin-top: 10px;
   text-align: center; }
   .programs.haylur-slider .pager a {
     width: 8px;
@@ -653,9 +656,9 @@ img {
 #haylur_slider {
   width: 100%; }
   #haylur_slider li {
-    width: 265px;
-    height: 160px;
-    margin-right: 30px;
+    width: 315px;
+    height: 190px;
+    margin-right: 32px;
     display: inline-block; }
     #haylur_slider li img {
       width: 100%;
