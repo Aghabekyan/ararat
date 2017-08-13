@@ -232,7 +232,7 @@
   }
 
 }
-.haylur-slider {
+.programs.haylur-slider {
   .caroufredsel_wrapper {
     width: 100% !important;
   }
@@ -242,17 +242,20 @@
     padding: 0 25px 0 35px;
     position: relative;
   }
+  .heading {
+    margin-bottom: 30px;
+  }
   .next,
   .prev {
     position: absolute;
     font-size: 27px;
     text-align: center;
-    top: 70px;
+    top: 140px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #fff;
-    color: #757575;
+    background-color: #d3d3db;
+    color: #e65100;
     transition: all 0.3s;
     @include box-shadow(cardShadow);
     &:hover {
@@ -272,13 +275,14 @@
     width: 100%;
     text-align: center;
     a {
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       font-size: 0;
       display: inline-block;
-      margin: 0 2px;
+      margin: 0 3px;
       color: transparent;
-      background-color: #e65100;
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
       border-radius: 50%;
       @include box-shadow(cardShadow);
       &:hover {
@@ -286,6 +290,10 @@
       }
       &:active {
         @include box-shadow(shadow24active);
+      }
+      &.selected {
+        background-color: #e65100;
+        border-color: #e65100;
       }
       span {
         font-size: 0;

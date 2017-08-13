@@ -576,72 +576,78 @@ img {
          margin-right: 12px;
        }*/ }
 
-.haylur-slider .caroufredsel_wrapper {
+.programs.haylur-slider .caroufredsel_wrapper {
   width: 100% !important; }
-.haylur-slider .container {
+.programs.haylur-slider .container {
   max-width: 1500px;
   margin-top: 30px;
   padding: 0 25px 0 35px;
   position: relative; }
-.haylur-slider .next,
-.haylur-slider .prev {
+.programs.haylur-slider .heading {
+  margin-bottom: 30px; }
+.programs.haylur-slider .next,
+.programs.haylur-slider .prev {
   position: absolute;
   font-size: 27px;
   text-align: center;
-  top: 70px;
+  top: 140px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #fff;
-  color: #757575;
+  background-color: #d3d3db;
+  color: #e65100;
   transition: all 0.3s;
   -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); }
-  .haylur-slider .next:hover,
-  .haylur-slider .prev:hover {
+  .programs.haylur-slider .next:hover,
+  .programs.haylur-slider .prev:hover {
     -webkit-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24);
     -moz-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24);
     -o-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24);
     box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24); }
-  .haylur-slider .next:active,
-  .haylur-slider .prev:active {
+  .programs.haylur-slider .next:active,
+  .programs.haylur-slider .prev:active {
     -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
     -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
     -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24); }
-.haylur-slider .prev {
+.programs.haylur-slider .prev {
   left: -5px; }
-.haylur-slider .next {
+.programs.haylur-slider .next {
   right: -15px; }
-.haylur-slider .pager {
+.programs.haylur-slider .pager {
   width: 100%;
   text-align: center; }
-  .haylur-slider .pager a {
-    width: 10px;
-    height: 10px;
+  .programs.haylur-slider .pager a {
+    width: 8px;
+    height: 8px;
     font-size: 0;
     display: inline-block;
-    margin: 0 2px;
+    margin: 0 3px;
     color: transparent;
-    background-color: #e65100;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
     border-radius: 50%;
     -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
     -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3); }
-    .haylur-slider .pager a:hover {
+    .programs.haylur-slider .pager a:hover {
       -webkit-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24);
       -moz-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24);
       -o-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24);
       box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.24); }
-    .haylur-slider .pager a:active {
+    .programs.haylur-slider .pager a:active {
       -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
       -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
       -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
       box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24); }
-    .haylur-slider .pager a span {
+    .programs.haylur-slider .pager a.selected {
+      background-color: #e65100;
+      border-color: #e65100; }
+    .programs.haylur-slider .pager a span {
       font-size: 0; }
 
 #haylur_slider {
