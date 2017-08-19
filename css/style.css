@@ -381,6 +381,9 @@ img {
     .currency ul li:nth-child(4) {
       animation-delay: 12s; }
 
+.slider-newsfeed .fotorama {
+  height: 482px; }
+
 .slider {
   padding-right: 26px; }
   .slider ul {
@@ -584,7 +587,7 @@ img {
   padding: 0 55px 0 65px;
   position: relative; }
 .programs.haylur-slider .container {
-  max-width: 1500px;
+  /*max-width: 1500px;*/
   margin-top: 30px;
   position: relative; }
 .programs.haylur-slider .heading {

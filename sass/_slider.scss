@@ -26,6 +26,11 @@
     }
   }
 }
+.slider-newsfeed {
+  .fotorama {
+    height: 482px;
+  }
+}
 .slider {
   padding-right: 26px;
   ul {
@@ -241,7 +246,7 @@
     position: relative;
   }
   .container {
-    max-width: 1500px;
+    /*max-width: 1500px;*/
     margin-top: 30px;
     position: relative;
   }
