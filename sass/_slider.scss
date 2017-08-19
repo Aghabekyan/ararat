@@ -238,11 +238,16 @@
 
 }
 .programs.haylur-slider {
+  padding: 0px 0 30px;
+  margin-bottom: 100px;
+  border: 1px solid #e0e0e0;
+  background-color: #f5f5fd;
+  background-image: url(../images/poly-bg.png);
   .caroufredsel_wrapper {
     width: 100% !important;
   }
   .list_carousel {
-    padding: 0 55px 0 65px;
+    padding: 0 0px 0 0px;
     position: relative;
   }
   .container {
@@ -258,26 +263,41 @@
     position: absolute;
     font-size: 27px;
     text-align: center;
-    top: 85px;
+    top: 80px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #d3d3db;
     color: #e65100;
     transition: all 0.3s;
+    &:before {
+      width: 100%;
+      display: inline-block;
+      line-height: 0.7;
+      padding: 6px 0;
+      box-sizing: border-box;
+    }
     @include box-shadow(cardShadow);
     &:hover {
+      background-color: #e4e4ec;
       @include box-shadow(shadow24hover);
     }
     &:active {
+      background-color: #f5f5fd;
       @include box-shadow(shadow24active);
     }
   }
   .prev {
     left: 5px;
+    &:before {
+      padding-right: 1px;
+    }
   }
   .next {
     right: 5px;
+    &:before {
+      padding-left: 3px;
+    }
   }
   .pager {
     width: 100%;
@@ -313,10 +333,10 @@
 #haylur_slider {
   width: 100%;
   li {
-    width: 315px;
-    height: 190px;
-    margin-right: 32px;
+    width: 293px;
+    height: 180px;
     display: inline-block;
+    margin-right: 10px;
     a, img {
       width: 100%;
       height: 100%;
